@@ -1,0 +1,101 @@
+.procurados {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.procurados-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.procurados-cards > li {
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2),
+    inset 0 -190px 0 var(--amarelo-principal);
+  border-radius: 8px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.card-button button {
+  width: 100%;
+  border: none;
+  display: block;
+  padding: 5px 0px;
+  border-radius: 4px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #fff;
+  color: var(--marrom-light);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.card-button button:hover {
+  background: #271e05;
+  color: #fff;
+  outline: 2px solid #271e05;
+}
+
+.procurados-image {
+  width: 200px;
+}
+
+.procurados-image img {
+  width: 100%;
+}
+
+.procurados-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.procurados-content .content-nome {
+  color: var(--marrom-light);
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+
+.procurados-content .content-dados {
+  color: var(--marrom-dark);
+  font-size: 1.1rem;
+  display: grid;
+  text-align: right;
+}
+
+.procurados-content .content-dados li {
+  display: grid;
+}
+
+.procurados-content .content-dados li:not(:last-child)::after {
+  content: "";
+  justify-self: right;
+  width: 15px;
+  height: 2px;
+  display: block;
+  background: #c17400;
+  margin: 5px 0;
+}
+
+.procurados-catalogo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.procurados-catalogo img {
+  width: 15px;
+}
+
+@media (max-width: 400px) {
+  .procurados-catalogo {
+    font-size: 1.5rem;
+  }
+}

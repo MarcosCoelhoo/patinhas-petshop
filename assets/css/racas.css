@@ -1,0 +1,37 @@
+.racas {
+  margin-bottom: 60px;
+}
+
+.racas-options {
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.racas-options li {
+  text-align: center;
+}
+
+.racas-options .options-image {
+  width: 180px;
+}
+
+.racas-options .options-image img {
+  width: 100%;
+  border: 4px solid var(--amarelo-principal);
+  border-radius: 50%;
+}
+
+.racas-options .options-name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  color: var(--marrom-dark);
+}
+
+@media (max-width: 1000px) {
+  .racas-options .options-image {
+    width: 140px;
+  }
+}

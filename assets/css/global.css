@@ -1,0 +1,52 @@
+:root {
+  --amarelo-principal: #ff9b04;
+  --marrom-light: #563e00;
+  --marrom-dark: #1f1600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-title {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: var(--marrom-dark);
+  text-align: center;
+}
+
+.button-section {
+  background: var(--amarelo-principal);
+  padding: 6px 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--marrom-light);
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.button-section:hover {
+  gap: 11px;
+}
